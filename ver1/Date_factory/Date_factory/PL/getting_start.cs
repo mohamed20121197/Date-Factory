@@ -12,6 +12,7 @@ namespace Date_factory.PL
 {
     public partial class getting_start : Form
     {
+        BL.vendors ven = new BL.vendors();
         public getting_start()
         {
             InitializeComponent();
@@ -38,6 +39,8 @@ namespace Date_factory.PL
         private void ادارةالموردينToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PL.vendors_managment frm = new vendors_managment();
+            frm.dataGridView1.DataSource = ven.get_all_vendors();
+               
             frm.ShowDialog();
         }
     }

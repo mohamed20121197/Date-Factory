@@ -45,7 +45,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\log_in.cs" />
+    <Compile Include="BL\vendors.cs" />
     <Compile Include="DAL\DAL.cs" />
+    <Compile Include="PL\add_vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\add_vendor.Designer.cs">
+      <DependentUpon>add_vendor.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\getting_start.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\add_vendor.resx">
+      <DependentUpon>add_vendor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\getting_start.resx">
       <DependentUpon>getting_start.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +93,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -97,7 +108,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\MyPicture.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -9,3 +9,4 @@ D:\Private\Date factory\Date_factory\Date_factory\obj\Debug\Date_factory.pdb
 D:\Private\Date factory\Date_factory\Date_factory\obj\Debug\Date_factory.PL.getting_start.resources
 D:\Private\Date factory\Date_factory\Date_factory\obj\Debug\Date_factory.PL.server_config.resources
 D:\Private\Date factory\Date_factory\Date_factory\obj\Debug\Date_factory.PL.vendors_managment.resources
+D:\Private\Date factory\Date_factory\Date_factory\obj\Debug\Date_factory.PL.add_vendor.resources
