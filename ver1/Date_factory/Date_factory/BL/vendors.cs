@@ -9,7 +9,7 @@ namespace Date_factory.BL
 {
     class vendors
     {
-        public void add_vendor(string ven_name, string ven_phone, string ven_address,
+        public void add_vendor(string vendor_name, string ven_phone, string ven_address,
             double last_money, double ven_credit_limit, string ven_type,
             string notes, byte[] ven_image)
 
@@ -21,7 +21,7 @@ namespace Date_factory.BL
 
 
             param[0] = new SqlParameter("@ven_name", SqlDbType.VarChar, 50);
-            param[0].Value = ven_name;
+            param[0].Value = vendor_name;
 
             param[1] = new SqlParameter("@ven_phone", SqlDbType.VarChar, 50);
             param[1].Value = ven_phone;
